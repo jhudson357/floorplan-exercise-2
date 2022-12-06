@@ -3,12 +3,14 @@ import Sink from "./Sink"
 
 const Kitchen = () => {
   return (
-    <div>
+    <div className="upper-right">
       <div className='oven-sink'>
         <Oven />
         <Sink />
       </div>
-      Kitchen
+      <div className="kitchen">
+        Kitchen
+      </div>
     </div>
   )
 }
