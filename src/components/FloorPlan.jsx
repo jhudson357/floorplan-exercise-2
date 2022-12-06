@@ -5,14 +5,20 @@ import LivingRoom from "./LivingRoom"
 
 const FloorPlan = () => {
   return (
-    <div>
-      <Bedroom bedNum='1'/>
-      <Kitchen />
-      <Bath size='Full'/>
-      <Bedroom bedNum='2'/>
-      <LivingRoom />
-      <Bath size='Half'/>
-      <Bedroom bedNum='3'/>
+    <div className='floorplan'>
+      <div className='upper-half'>
+        <div className='upper-left'>
+          <Bedroom bedNum='1'/>
+          <Bath size='Full'/>
+        </div>
+        <LivingRoom />
+        <Kitchen />
+      </div>
+      <div className='lower-half'>
+        <Bedroom bedNum='2'/>
+        <Bath size='Half'/>
+        <Bedroom bedNum='3'/>
+      </div>
     </div>
   )
 }
