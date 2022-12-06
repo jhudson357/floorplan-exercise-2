@@ -1,7 +1,7 @@
-const Bath = () => {
+const Bath = (props) => {
   return ( 
     <div>
-      
+      {props.size} Bath
     </div>
   )
 }
